@@ -1,0 +1,26 @@
+<html>
+  <body>
+    <table border="2">
+      <!-- thead, tbody, tfoot 태그로 묶여있으면 해당 태그로 묶인 코드가 어디에 있든 정해진 위치에 있게 된다.-->
+      <thead>
+        <tr>
+          <th>이름</th><th>성별</th><th>주소</th> <th>회비</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- rowspan="2" : 이 속성이 적힌 부분부터 2개의 행이 병합된다. 아래의 행은 삭제한다.-->
+          <td>최진혁</td><td>남</td><td rowspan="2">청주</td><td>1000</td>
+        </tr>
+
+        <tr>
+          <td>최유빈</td><td>여</td><td>500</td>
+        </tr>
+      <tbody>
+      <tfoot>
+        <!-- colspan ="3" : 이 속성이 적힌 부분부터 3개 컬럼을 합친다. -->
+        <td colspan="3">합계</td><td>1500</td>
+      </tfoot>
+    </table>
+  </body>
+</html>
