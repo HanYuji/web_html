@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <!-- radio는 같은 name을 지정하면 같은 name 중에서 하나만 선택되도록 함.
+    즉, 같은 name인 것들끼지 그룹핑되어 같은 그룹에서 선택이 되면 나머지 해제됨
+    기본적으로 선택됐으면 하는 것에 checked를 표기해주면 default값이 체크된 것으로 됨
+   -->
+   <form action="http://localhost/order.php">
+     <p>
+        <input type="radio" name="color1" value="">
+        <input type="radio" name="color1" value="">
+        <input type="radio" name="color1" value="">
+      </p>
+      <p>
+         <input type="radio" name="color1" value="">
+         <input type="radio" name="color1" value="">
+         <input type="radio" name="color1" value="">
+       </p>
+       <p>
+          <input type="radio" name="color2" value="">
+          <input type="radio" name="color2" value="">
+          <input type="radio" name="color2" value="">
+        </p>
+     <p>
+       <h1>색상(단일선택)</h1>
+        <input type="radio" name="color" value="red"> 붉은색
+        <input type="radio" name="color" value="black"> 검은색
+        <input type="radio" name="color" value="blue" checked> 파란색
+      </p>
+      <!-- checkbox : 같은 name을 가지고 있는 것들을 다중으로 선택 가능함.
+    기본적으로 선택됐으면 하는 것에 checked를 표기해주면 됨 -->
+      <p>
+        <h1>사이즈(다중선택)</h1>
+         <input type="checkbox" name="size" value="95" checked> 95
+         <input type="checkbox" name="size" value="100" checked> 100
+         <input type="checkbox" name="size" value="105"> 105
+       </p>
+
+       <input type="submit">
+
+     </form>
+  </body>
+</html>
