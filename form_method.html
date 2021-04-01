@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <!-- method를 지정하지 않으면 get 방식으로 자동지정됨.
+    get : url를 통해서 데이터 전송하는 방식
+    post : url이 아닌 다른 방법으로 데이터를 숨겨서 전송하는 방식
+
+    form을 이용해서 데이터를 전송한다면 거의 100% post방식으로 데이터를 전송함.
+    전송방법은 서버쪽 엔지니어의 권한이므로 서버담당자의 요청대로 진행하면 됨.
+   -->
+    <form action="http://localhost/method.php" method="post">
+      <input type="text" name="id">
+      <input type="password" name="pwd">
+      <input type="submit">
+    </form>
+  </body>
+</html>
